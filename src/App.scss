@@ -71,6 +71,35 @@ body{
       }
     }
   }
+  .banner-container{
+    height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    .banner-title{
+      font-size: 5rem;
+      span{
+        color: #313bac;
+      }
+    }
+  }
+  .experience-list{
+    display: flex;
+    margin-bottom: 20px;
+    .experience-year{
+      h6{
+        margin-bottom: 0;
+        font-size: 15px;
+        color: #313bac;
+        padding-top: 2px;
+      }
+    }
+    .experience-post{
+      padding-left: 50px;
+      h5{
+        margin-bottom: 0;
+      }
+    }
+  }
   .work-row{
     .work-card{
       img{
