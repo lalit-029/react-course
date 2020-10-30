@@ -140,6 +140,26 @@ body{
       }
     }
   }
+  .footer-container{
+    span{
+      font-weight: 500;
+      &:hover{
+        color: #313bac;
+      }
+    }
+    .font-row{
+      a{
+        svg{
+          cursor: pointer;
+          color: #000;
+          font-size: 20px;
+          &:hover{
+            color: #313bac;
+          }
+        }
+      }
+    }
+  }
 }
 @media (max-width: 575.98px) {
   .App {
