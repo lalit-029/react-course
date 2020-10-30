@@ -25,6 +25,9 @@ body{
     &:first-child{
       border-bottom: 1.5px solid rgba(0,0,0,0.1);
     }
+    &:last-child{
+      border-top: 1.5px solid rgba(0,0,0,0.1);
+    }
   }
   .navbar{
     .navbar-brand{
@@ -64,6 +67,22 @@ body{
       &:hover{
         &:before , &:after {
           width: 40%;
+        }
+      }
+    }
+  }
+  .work-row{
+    .work-card{
+      img{
+        width: 290px;
+        height: 290px;
+        object-fit: contain;
+        border-radius: 20px;
+        &.interaction{
+          background-color: #f6d6d6;
+        }
+        &.illustration{
+          background-color: #fea175;
         }
       }
     }
