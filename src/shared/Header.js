@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import {Container, Nav} from 'react-bootstrap';
 
@@ -11,10 +11,10 @@ function Header() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto">
-                    <Nav.Link className="text-xs-left" href="#features">Services</Nav.Link>
-                    <Nav.Link className="text-xs-left" href="#pricing">Resume</Nav.Link>
-                    <Nav.Link className="text-xs-left" href="#pricing">About Me</Nav.Link>
-                    <Nav.Link className="text-xs-left" href="#pricing">Contact Us</Nav.Link>
+                    <Nav.Link className="text-xs-left" href="#">Services</Nav.Link>
+                    <Nav.Link className="text-xs-left" href="#">Resume</Nav.Link>
+                    <Nav.Link className="text-xs-left" href="#">About Me</Nav.Link>
+                    <Nav.Link className="text-xs-left" href="#">Contact Us</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
                 </Navbar>
