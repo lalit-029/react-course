@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.scss'; 
 import Header from './shared/Header';
 import Footer from './shared/Footer';
@@ -13,16 +13,27 @@ import Resume from "./main/Resume";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <Header />
+      <Router>
         <Switch>
-          <Route exact path='/' component = {Header}/>
-          <Route exact path='/home' Component={Home} />
-          <Route exact path='/about' Component={About} />
-          <Route exact path='/contact' Component={Contact} />
-          <Route exact path='/service' Component={Services} />
-          <Route exact path='/resume' Component={Resume} />
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/about'>
+            <About />
+          </Route>
+          <Route exact path='/contact'>
+            <Contact />
+          </Route>
+          <Route exact path='/service'>
+            <Services />
+          </Route>
+          <Route exact path='/resume'>
+            <Resume />
+          </Route>
         </Switch>
-      </BrowserRouter>
+      </Router>
+      <Footer />
     </div>
   );
 }
