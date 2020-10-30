@@ -1,11 +1,11 @@
-import React, {Component} from 'react'; 
+import React from 'react'; 
 import {Row, Col} from 'react-bootstrap';
 
 function Skills() {
     return (
         <Row className="p-5">
             <Col xs="12" lg="6">
-
+                
             </Col>
             <Col xs="12" lg="6">
                 <div className="experience-list">

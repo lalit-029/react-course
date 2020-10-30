@@ -1,5 +1,5 @@
-import React, {Component} from 'react'; 
-import {Container, Row, Col, Button, Form} from 'react-bootstrap';
+import React from 'react'; 
+import {Row, Col, Button, Form} from 'react-bootstrap';
 
 function ContactForm() {
     return (
@@ -7,13 +7,13 @@ function ContactForm() {
             <Row className="mx-0 py-5 contact-link-row">
                 <Col xs="12" lg={{ span: 5, offset: 1 }}>
                     <a className="d-flex align-items-center justify-content-center contact-links">
-                        <img src="text.png" />
+                        <img src="text.png" alt="contact" />
                         <h5 className="mb-0 ">Lrj0496@gmail.com</h5>
                     </a>
                 </Col>  
                 <Col xs="12" lg="5">
                     <a className="d-flex align-items-center justify-content-center contact-links">
-                        <img src="phone.png" />
+                        <img src="phone.png" alt="contact" />
                         <h5 className="mb-0 ">(+91)&nbsp;9582351011</h5>
                     </a>
                 </Col>
