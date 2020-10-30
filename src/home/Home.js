@@ -3,10 +3,15 @@ import {Container, Row, Col, Button, Form} from 'react-bootstrap';
 import Work from './Work';
 import Skills from './Skills';
 import ContactForm from './ContactForm';
-
+import Intro from './Intro';
 function Home() {
     return (
         <div>
+            <Container className="banner-container">
+                <Row>
+                    <Intro />
+                </Row>
+            </Container>
             <Container className="p-0 py-5">
                 <Row>
                     <Col xs="12" lg={{ span: 6, offset: 3 }} className="pb-5">
@@ -16,7 +21,7 @@ function Home() {
                 <Work />
             </Container> 
             <Container className="p-0 py-5">
-                <h2 className="text-center mb-0">Skills & Experiences</h2>
+                <h2 className="text-center mb-0 pb-5">Skills & Experiences</h2>
                 <Skills />
             </Container>    
             <Container className="p-0">
