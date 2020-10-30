@@ -18,7 +18,7 @@ function ContactForm() {
                     </a>
                 </Col>
             </Row>
-            <Row className="mx-0">
+            <Row className="mx-0 pt-5">
                 <Col xs="12" lg="4">
                     <Form.Group className="mb-3">
                         <Form.Label>Name</Form.Label>
