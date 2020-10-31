@@ -193,6 +193,16 @@ body{
       }
     }
   }
+  .resume-container{
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    small{
+      span{
+        color: #313bac;
+      }
+    }
+  }
 }
 @media (max-width: 575.98px) {
   .App {
