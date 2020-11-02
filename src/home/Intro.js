@@ -1,7 +1,7 @@
 import React from 'react'; 
 import {Col} from 'react-bootstrap';
 
-let currDate = new Date(2020, 11, 2, 19);
+let currDate = new Date();
 currDate = currDate.getHours();
 let greeting = "";
 if ( currDate >= 1 && currDate < 12 ) {
