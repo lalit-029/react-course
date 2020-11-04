@@ -35,7 +35,32 @@ const Home = () =>{
     const pricinglistcard = Pricinglist.map( (pricingcard, i) => {
         return <PricingCard key={i} id={pricingcard.id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={pricingcard.title} description={pricingcard.description} price={pricingcard.price} />
     })
-    console.log(pricinglistcard)
+    const Servicelist = [
+        {
+            id: 1,
+            title: "Animation",
+            imagesrc: "animation.png",
+            className: "",
+            description: "I blew a little magic to make static designs work without coding. Yah! It's Animation."
+        },
+        {
+            id: 2,
+            title: "Interaction",
+            imagesrc: "interaction.jpg",
+            className: "interaction",
+            description: "Optimized UI/UX for digital products like desktop, mobile, etc. Help business growth more."
+        },
+        {
+            id: 3,
+            title: "Illustration",
+            imagesrc: "illustration.jpg",
+            className: "illustration",
+            description: "Design things abstract become visible with a look impressive."
+        },
+    ]
+    const servicelistcard = Servicelist.map( (servicecard, i) => {
+        return <Work key={i} id={servicecard.id} className={servicecard.className} imagesrc={servicecard.imagesrc} title={servicecard.title} description={servicecard.description} />
+    })
     return (
         <div>
             <Container className="banner-container">
@@ -49,7 +74,9 @@ const Home = () =>{
                         <h2 className="text-center mb-0">I Know That <span>Good Design</span> Meant <span>Good Business</span></h2>
                     </Col>
                 </Row>
-                <Work />
+                <Row className="work-row">
+                    {servicelistcard}
+                </Row>
             </Container> 
             <Container className="p-0 py-5">
                 <h2 className="text-center mb-0 pb-5">Skills & Experiences</h2>
