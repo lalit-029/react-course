@@ -6,6 +6,32 @@ import ContactForm from './ContactForm';
 import Intro from './Intro';
 import PricingCard from './Pricing';
 const Home = () =>{
+    const Pricinglist = [
+        {   
+            id: 1,
+            title: "Logo Design",
+            description: "A logo for your product",
+            price: "$5"
+        },
+        {   
+            id: 2,
+            title: "Web Design",
+            description: "A website for your product",
+            price: "$15"
+        },
+        {   
+            id: 3,
+            title: "UI Design",
+            description: "A UI for your product",
+            price: "$12"
+        },
+        {   
+            id: 4,
+            title: "UX Design",
+            description: "A UX for your product",
+            price: "$8"
+        }
+    ]
     return (
         <div>
             <Container className="banner-container">
@@ -29,16 +55,16 @@ const Home = () =>{
                 <Row>
                     <h2 className="text-center mb-5">Pricing</h2>
                     <Col xs="12" lg="3" className="py-5">
-                        <PricingCard imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title="Logo Design" description="A logo for your product" price="$5" />
+                        <PricingCard id={Pricinglist[0].id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={Pricinglist[0].title} description={Pricinglist[0].description} price={Pricinglist[0].price} />
                     </Col>
                     <Col xs="12" lg="3" className="py-5">
-                        <PricingCard imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title="Web Design" description="A website for your product" price="$13" />
+                        <PricingCard id={Pricinglist[1].id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={Pricinglist[1].title} description={Pricinglist[1].description} price={Pricinglist[1].price} />
                     </Col>
                     <Col xs="12" lg="3" className="py-5">
-                        <PricingCard imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title="UI Design" description="A prototype for your product" price="$13" />
+                        <PricingCard id={Pricinglist[2].id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={Pricinglist[2].title} description={Pricinglist[2].description} price={Pricinglist[2].price} />
                     </Col>
                     <Col xs="12" lg="3" className="py-5">
-                        <PricingCard imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title="UX Design" description="A experience for your product" price="$15" />
+                        <PricingCard id={Pricinglist[3].id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={Pricinglist[3].title} description={Pricinglist[3].description} price={Pricinglist[3].price} />
                     </Col>
                 </Row>
             </Container>    
