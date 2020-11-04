@@ -32,6 +32,10 @@ const Home = () =>{
             price: "$8"
         }
     ]
+    const pricinglistcard = Pricinglist.map( (pricingcard, i) => {
+        return <PricingCard key={i} id={pricingcard.id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={pricingcard.title} description={pricingcard.description} price={pricingcard.price} />
+    })
+    console.log(pricinglistcard)
     return (
         <div>
             <Container className="banner-container">
@@ -54,18 +58,7 @@ const Home = () =>{
             <Container className="py-5 px-0">
                 <Row>
                     <h2 className="text-center mb-5">Pricing</h2>
-                    <Col xs="12" lg="3" className="py-5">
-                        <PricingCard id={Pricinglist[0].id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={Pricinglist[0].title} description={Pricinglist[0].description} price={Pricinglist[0].price} />
-                    </Col>
-                    <Col xs="12" lg="3" className="py-5">
-                        <PricingCard id={Pricinglist[1].id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={Pricinglist[1].title} description={Pricinglist[1].description} price={Pricinglist[1].price} />
-                    </Col>
-                    <Col xs="12" lg="3" className="py-5">
-                        <PricingCard id={Pricinglist[2].id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={Pricinglist[2].title} description={Pricinglist[2].description} price={Pricinglist[2].price} />
-                    </Col>
-                    <Col xs="12" lg="3" className="py-5">
-                        <PricingCard id={Pricinglist[3].id} imagesrc="https://dummyimage.com/400x400/d4d4d4/ffffff&text=Pricing+Card" title={Pricinglist[3].title} description={Pricinglist[3].description} price={Pricinglist[3].price} />
-                    </Col>
+                    {pricinglistcard}
                 </Row>
             </Container>    
             <Container className="p-0">
