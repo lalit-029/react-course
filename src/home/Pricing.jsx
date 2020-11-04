@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import {Row, Col, Button, Card} from "react-bootstrap";
-const PricingCard = () => {
+const PricingCard = (props) => {
     return(
         <>
             <Card>
-                <Card.Img variant="top" src={this.props.imagesrc} alt="pricing-image" />
+                <Card.Img variant="top" src={props.imagesrc} alt="pricing-image" />
                 <Card.Body>
-                    <Card.Title>{this.props.title}</Card.Title>
+                    <Card.Title>{props.title}</Card.Title>
                     <Card.Text>
-                    {this.props.description}
+                    {props.description}
                     </Card.Text>
-                    <Button variant="primary" className="w-100">Book now - {this.props.price}</Button>
+                    <Button variant="primary" className="w-100">Book now - {props.price}</Button>
                 </Card.Body>
             </Card>
                 
