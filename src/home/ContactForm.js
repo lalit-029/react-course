@@ -1,9 +1,10 @@
-import React from 'react'; 
+import React, { Component } from 'react'; 
 import {Row, Col, Button, Form} from 'react-bootstrap';
 
-function ContactForm() {
-    return (
-        <div className="pb-5">
+class ContactForm extends Component {
+    render (){
+        return(
+            <div className="pb-5">
             <Row className="mx-0 py-5 contact-link-row">
                 <Col xs="12" lg={{ span: 5, offset: 1 }}>
                     <a className="d-flex align-items-center justify-content-center contact-links">
@@ -58,7 +59,8 @@ function ContactForm() {
                 Send Message
                 </Button>
             </Row>
-        </div> 
-    );
+        </div>
+        ); 
+    }
 }
 export default ContactForm;
