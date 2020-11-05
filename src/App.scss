@@ -209,18 +209,21 @@ body{
       }
     }
   }
+  .btn-primary{
+    background-color: #313bac;
+  }
   .resume-container{
     height: calc(100vh - 150px);
     display: flex;
     align-items: center;
-    button{
-      background-color: #313bac;
-    }
     small{
       span{
         color: #313bac;
       }
     }
+  }
+  .time-height{
+    height: calc(100vh - 245px);
   }
 }
 @media (max-width: 575.98px) {
