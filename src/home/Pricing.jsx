@@ -4,8 +4,8 @@ const PricingCard = (props) => {
     return(
         <>  
             <Col xs="12" lg="3" className="py-5">
-                <Card>
-                    <Card.Img variant="top" src={props.imagesrc} alt="pricing-image" />
+                <Card className="pricing-cards">
+                    <Card.Img variant="top" src={`https://joeschmoe.io/api/v1/${props.title}`} alt="pricing-image" />
                     <Card.Body>
                         <Card.Title>{props.title}</Card.Title>
                         <Card.Text>
