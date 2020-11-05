@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.scss'; 
+
 
 const Game = () => {
     return(
         <>
-            <h2 className="text-center mb-0">Welcome to <span>slot machine game</span></h2>
+            <h2 className="text-center my-5">Welcome to <span style={{fontWeight:"Bold", textTransform: "Uppercase"}}>slot machine game</span></h2>
         </>
     )
 };
