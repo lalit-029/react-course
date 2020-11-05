@@ -8,7 +8,7 @@ import About from "./main/About";
 import Contact from "./main/Contact";
 import Services from "./main/Services";
 import Resume from "./main/Resume";
-
+import Game from "./main/Game";
 
 const App = () => {
   return (
@@ -30,6 +30,9 @@ const App = () => {
           </Route>
           <Route exact path='/resume'>
             <Resume />
+          </Route>
+          <Route exact path='/game'>
+            <Game />
           </Route>
         </Switch>
       </Router>
