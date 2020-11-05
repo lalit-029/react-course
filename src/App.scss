@@ -125,6 +125,17 @@ body{
       height: 308.71px;
     }
   }
+  .slot-machine{
+    border: 1px solid #ccc;
+    hr{
+      margin: 0;
+    }
+    .slot-inner{
+      padding: 18px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+  }
   .contact-form{
     .contact-link-row{
       .col-lg-5{
